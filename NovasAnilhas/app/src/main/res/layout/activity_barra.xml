@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport = "true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back5"
+        tools:context=".BarraActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.31" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.11" />
+
+        <TextView
+            android:id="@+id/textViewBarra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="Barra"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="234dp"
+            android:layout_height="105dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBarra"
+            tools:layout_editor_absoluteX="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Masculina"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/radioButtonF"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Feminina"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/ProgressBar45"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+            android:progress="0"
+
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewPerc"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar45"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar45" />
+
+        <ImageView
+            android:id="@+id/ImageView45"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA45"
+            app:layout_constraintTop_toTopOf="@+id/buttonA45"
+            app:srcCompat="@drawable/a45"
+            tools:srcCompat="@drawable/a45" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar35"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar45"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA35"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar35"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar35" />
+
+        <ImageView
+            android:id="@+id/ImageView35"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA35"
+            app:layout_constraintTop_toTopOf="@+id/buttonA35"
+            app:srcCompat="@drawable/a35"
+            tools:srcCompat="@drawable/a35" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar25"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar35"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA25"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar25"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar25" />
+
+        <ImageView
+            android:id="@+id/ImageView25"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA25"
+            app:layout_constraintTop_toTopOf="@+id/buttonA25"
+            app:srcCompat="@drawable/a25"
+            tools:srcCompat="@drawable/a25" />
+
+        <ImageView
+            android:id="@+id/ImageView15"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA15"
+            app:layout_constraintTop_toTopOf="@+id/buttonA15"
+            app:srcCompat="@drawable/a15"
+            tools:srcCompat="@drawable/a15" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar15"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar25"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA15"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar15"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar15" />
+
+        <Button
+            android:id="@+id/buttonD15"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="132dp" />
+
+        <Button
+            android:id="@+id/buttonA45"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar45" />
+
+        <Button
+            android:id="@+id/buttonD45"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA45" />
+
+        <Button
+            android:id="@+id/buttonA35"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar35" />
+
+        <Button
+            android:id="@+id/buttonD35"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA35" />
+
+        <Button
+            android:id="@+id/buttonD25"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA25" />
+
+        <Button
+            android:id="@+id/buttonA25"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar25" />
+
+        <Button
+            android:id="@+id/buttonD10"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA10" />
+
+        <Button
+            android:id="@+id/buttonA10"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar10" />
+
+        <Button
+            android:id="@+id/buttonD5"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA5" />
+
+        <Button
+            android:id="@+id/buttonA5"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar5" />
+
+        <Button
+            android:id="@+id/buttonD2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="-"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/buttonA2" />
+
+        <Button
+            android:id="@+id/buttonA2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar2" />
+
+        <Button
+            android:id="@+id/buttonA15"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="+"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar15" />
+
+
+        <ProgressBar
+            android:id="@+id/ProgressBar10"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar15"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA10"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar10"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar10" />
+
+        <ImageView
+            android:id="@+id/ImageView10"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA10"
+            app:layout_constraintTop_toTopOf="@+id/buttonA10"
+            app:srcCompat="@drawable/a101"
+            tools:srcCompat="@drawable/a101" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar10"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA5"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar5"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar5" />
+
+        <ImageView
+            android:id="@+id/ImageView5"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA5"
+            app:layout_constraintTop_toTopOf="@+id/buttonA5"
+            app:srcCompat="@drawable/a500"
+            tools:srcCompat="@drawable/a500" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar5"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewA2"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="22dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/ProgressBar2"
+            app:layout_constraintTop_toTopOf="@+id/ProgressBar2" />
+
+        <ImageView
+            android:id="@+id/ImageView2"
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonA2"
+            app:layout_constraintTop_toTopOf="@+id/buttonA2"
+            app:srcCompat="@drawable/a200"
+            tools:srcCompat="@drawable/a200" />
+
+        <TextView
+            android:id="@+id/textViewLabelTotalLibras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total Libras:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/ProgressBar2" />
+
+        <TextView
+            android:id="@+id/textViewTotalLibras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewLabelTotalLibras"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/textViewLabelTotalKG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total KG:"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelTotalLibras" />
+
+        <TextView
+            android:id="@+id/textViewTotalKG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewLabelTotalKG"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

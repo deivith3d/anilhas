@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport = "true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back5"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="153dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <Button
+        android:id="@+id/buttonConverteLb"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:icon="@drawable/ic_baseline_double_arrow_24"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLimpar"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:icon="@android:drawable/ic_menu_rotate"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/buttonCalculaTot2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        app:icon="@drawable/ic_baseline_double_arrow_24"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalLb2" />
+
+    <EditText
+        android:id="@+id/editTextKg"
+        android:layout_width="106dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLb"
+        android:layout_width="106dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTotalLb"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTXLb" />
+
+    <EditText
+        android:id="@+id/editTextPerc"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalLb2" />
+
+    <TextView
+        android:id="@+id/textViewTXKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Kg"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKg" />
+
+    <TextView
+        android:id="@+id/textViewTXLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Lb"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLb" />
+
+    <TextView
+        android:id="@+id/textViewPerc"
+        android:layout_width="59dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/ProgressBar45" />
+
+    <TextView
+        android:id="@+id/textViewTotalLb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Lb s/ Barra"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerc" />
+
+    <TextView
+        android:id="@+id/textViewTotalLb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Total Lb"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTotalLb" />
+
+    <TextView
+        android:id="@+id/textViewBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="Barra"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressBar45" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="234dp"
+        android:layout_height="105dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBarra">
+
+        <RadioButton
+            android:id="@+id/radioButtonM"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Masculina"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonF"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Feminina"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewAnilhas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Anilhas"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewA35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnilhas" />
+
+    <TextView
+        android:id="@+id/textViewA25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewA45" />
+
+    <TextView
+        android:id="@+id/textViewA45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnilhas" />
+
+    <TextView
+        android:id="@+id/textViewA15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewA25"
+        app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/textViewA10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewA25" />
+
+    <TextView
+        android:id="@+id/textViewA5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewA10"
+        app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/textViewA2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewA10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <ImageView
+        android:id="@+id/ImageView45"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA45"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnilhas"
+        app:srcCompat="@drawable/a45"
+        tools:srcCompat="@drawable/a45" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA25"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView45"
+        app:srcCompat="@drawable/a25"
+        tools:srcCompat="@drawable/a25" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/a101"
+        tools:srcCompat="@drawable/a101" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/a200"
+        tools:srcCompat="@drawable/a200" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/a500"
+        tools:srcCompat="@drawable/a500" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/a15"
+        tools:srcCompat="@drawable/a15" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewA35"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnilhas"
+        app:srcCompat="@drawable/a35"
+        tools:srcCompat="@drawable/a35" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar45"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_shape"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progressbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonA45"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/buttonD45"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressBar45" />
+
+    <Button
+        android:id="@+id/buttonD45"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProgressBar45" />
+
+    <CheckBox
+        android:id="@+id/CheckboxManterAnilhas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:text="Manter Anilhas Pesadas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAnilhas"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
